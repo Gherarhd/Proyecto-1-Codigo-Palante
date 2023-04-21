@@ -178,8 +178,8 @@ header {
   position: relative;
   top: 0;
   left: 0;
-  background: url("/img/pexels-seppe-machielsen-14011035.jpg") no-repeat center
-    center fixed;
+  background: url("/doc/img/pexels-seppe-machielsen-14011035.jpg") no-repeat
+    center center fixed;
   background-size: cover;
   width: 90%;
   margin: 0 auto;
