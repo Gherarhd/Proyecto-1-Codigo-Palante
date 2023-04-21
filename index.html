@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nombre Apellido</title>
+    <link
+      rel="shortcut icon"
+      href="img/multi-select-svgrepo-com.svg"
+      type="image/x-icon"
+    />
+    <title>Gherarhd Ravelo</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css" />
@@ -18,61 +23,70 @@
   <body>
     <header>
       <div class="logo">
-        <img
-          src="https://campus.eidosglobal.org/archivos/logos/Logo_principal.png"
-          alt="logo"
-        />
+        <img src="img/logo-tech-.svg" alt="logo" />
       </div>
       <nav class="navegacion">
-        <a href="#">Inicio</a>
-        <a href="#">Contacto</a>
+        <a href="#inicio">Inicio</a>
+        <a href="#contacto">Contacto</a>
       </nav>
     </header>
 
     <main>
-      <section class="contenedor contenido-principal">
-        <div>
-          <img
-            class="imagen-perfil"
-            src="img/imagenGR.jpeg"
-            alt="imagen-perfil"
+      <div class="video-container">
+        <video class="video" autoplay muted loop>
+          <source
+            src="video/pexels-pressmaster-3129671-1280x720-30fps.mp4"
+            media="(min-width: )"
+            srcset=""
+            type="video/mp4"
           />
-        </div>
-        <div class="texto-principal">
-          <h1>Hola! Soy Gherarhd</h1>
-          <p>
-            Un programador front-end con experiencia en la creación de sitios
-            web y aplicaciones interactivas para diversos clientes. Me apasiona
-            trabajar en proyectos que desafíen mis habilidades y me permitan
-            utilizar tecnologías innovadoras para crear soluciones de alta
-            calidad. Mi experiencia incluye la creación de interfaces de usuario
-            atractivas y receptivas utilizando HTML, CSS y JavaScript, así como
-            el desarrollo de aplicaciones web dinámicas utilizando frameworks
-            populares como React , Angular y Vue.js. Además, tengo experiencia
-            en el diseño y desarrollo de sitios web para dispositivos móviles y
-            en la integración de tecnologías de terceros, como APIs y
-            bibliotecas de animación.
-          </p>
-        </div>
+        </video>
+        <section class="overlay">
+          <div>
+            <img
+              id="inicio"
+              class="imagen-perfil"
+              src="img/imagenGR.jpeg"
+              alt="imagen-perfil"
+            />
+          </div>
+          <div class="texto-principal">
+            <h1>Hola! Soy Gherarhd</h1>
+            <p>
+              Programador front-end con experiencia en la creación de sitios web
+              y aplicaciones interactivas para diversos clientes. Me apasiona
+              trabajar en proyectos que desafíen mis habilidades y me permitan
+              utilizar tecnologías innovadoras para crear soluciones de alta
+              calidad. Mi experiencia incluye la creación de interfaces de
+              usuario atractivas y receptivas utilizando HTML, CSS y JavaScript,
+              así como el desarrollo de aplicaciones web dinámicas utilizando
+              frameworks populares como React , Angular y Vue.js. Además, tengo
+              experiencia en el diseño y desarrollo de sitios web para
+              dispositivos móviles y en la integración de tecnologías de
+              terceros, como APIs y bibliotecas de animación.
+            </p>
+            <a href="http://biografiagr-palante.netlify.app" target="_blank">
+              <button class="boton" type="button">Mi Portafolio</button>
+            </a>
+          </div>
+        </section>
+      </div>
 
-        <a href="http://biografiagr-palante.netlify.app" target="_blank">
-          <button class="boton" type="button">Mi Portafolio</button>
-        </a>
-      </section>
-
-      <section class="contenido-principal">
-        <div class="texto-principal hablemos">
-          <h2>Hablemos!</h2>
-          <p>
-            Con mi experiencia en HTML, CSS y JavaScript, puedo ayudar a
-            construir una presencia en línea efectiva que sea fácil de usar y
-            que brinde una experiencia de usuario atractiva. Si está buscando un
-            sitio web de alta calidad y personalizado, ¡estoy aquí para
-            ayudarlo! Contácteme para discutir su proyecto y cómo puedo ayudar a
-            llevarlo al siguiente nivel.
-          </p>
+      <article class="contenido-principal">
+        <div class="hero-img">
+          <div class="texto-principal hablemos">
+            <h2>Hablemos!</h2>
+            <p>
+              Con mi experiencia en HTML, CSS y JavaScript, puedo ayudar a
+              construir una presencia en línea efectiva que sea fácil de usar y
+              que brinde una experiencia de usuario atractiva. Si está buscando
+              un sitio web de alta calidad y personalizado, ¡estoy aquí para
+              ayudarlo! Contácteme para discutir su proyecto y cómo puedo ayudar
+              a llevarlo al siguiente nivel.
+            </p>
+          </div>
         </div>
-      </section>
+      </article>
       <section class="enlaces">
         <a href="mailto:ravelogherarhd@gmail.com" target="_blank"
           ><img src="img/mail.png" alt="imagen-email"
@@ -90,8 +104,8 @@
       </section>
     </main>
 
-    <footer>
-      <h3>Código Palante</h3>
+    <footer id="contacto">
+      <h2>Código Palante</h2>
     </footer>
   </body>
 </html>
