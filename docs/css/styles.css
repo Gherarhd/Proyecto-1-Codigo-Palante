@@ -62,12 +62,6 @@ main {
 
 /* seccion header*/
 header {
-  /* background: rgb(6, 16, 17); */
-  /* background: linear-gradient(
-    180deg,
-    rgba(6, 16, 17, 1) 86%,
-    rgba(6, 98, 107, 1) 100%
-  ); */
   background-image: linear-gradient(
     to bottom,
     #07191a,
@@ -91,6 +85,14 @@ header {
   border-bottom: 0.5px solid var(--primario);
 }
 
+@media (max-width: 765px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 .logo {
   width: 30%;
   margin: 10px;
@@ -98,7 +100,8 @@ header {
 .logo img {
   display: block;
   margin: 0 auto;
-  width: 120px;
+  width: 100%;
+  max-width: 120px;
   height: auto;
   /* border-bottom: 1px solid rgba(6, 98, 107); */
   border-radius: 20px;
@@ -121,6 +124,14 @@ header {
   color: var(--primario);
 }
 
+@media (max-width: 765px) {
+  .navegacion {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+  }
+}
+
 /* Seccion Principal*/
 
 .video-container {
@@ -129,6 +140,24 @@ header {
   height: auto;
   overflow: hidden;
 }
+
+@media (max-width: 768px) {
+  .video-container {
+    height: 800px;
+  }
+  .video {
+    height: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .video-container {
+    height: 1100px;
+  }
+  .video {
+    height: 100%;
+  }
+}
+
 .overlay {
   position: absolute;
   top: 0;
@@ -146,7 +175,8 @@ header {
 
 .imagen-perfil {
   display: block;
-  width: 320px;
+  width: 100%;
+  max-width: 320px;
   height: auto;
   border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -213,6 +243,26 @@ header {
   -o-border-radius: 20px;
 }
 
+@media (max-width: 768px) {
+  .texto-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 10px;
+    padding: 5px;
+    margin-left: 0;
+  }
+  .texto-principal p {
+    margin: 5px;
+  }
+
+  .imagen-div {
+    padding: 10px;
+  }
+}
+
 .hablemos {
   background-color: rgb(6, 16, 17, 0.6);
   width: 100%;
@@ -245,6 +295,15 @@ header {
 }
 .enlaces img:hover {
   opacity: 0.8;
+}
+@media (max-width: 480px) {
+  .enlaces {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
 }
 
 footer {
